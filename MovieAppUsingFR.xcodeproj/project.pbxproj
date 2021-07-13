@@ -13,6 +13,9 @@
 		90BF3A3A269E2172000F0C15 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90BF3A39269E2172000F0C15 /* Preview Assets.xcassets */; };
 		90BF3A45269E2172000F0C15 /* MovieAppUsingFRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BF3A44269E2172000F0C15 /* MovieAppUsingFRTests.swift */; };
 		90BF3A50269E2172000F0C15 /* MovieAppUsingFRUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BF3A4F269E2172000F0C15 /* MovieAppUsingFRUITests.swift */; };
+		90BF3A5E269E2377000F0C15 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BF3A5D269E2377000F0C15 /* CoreDataManager.swift */; };
+		90BF3A61269E23E8000F0C15 /* MovieAppModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 90BF3A5F269E23E8000F0C15 /* MovieAppModel.xcdatamodeld */; };
+		90BF3A64269E266B000F0C15 /* Movie+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BF3A63269E266B000F0C15 /* Movie+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		90BF3A4B269E2172000F0C15 /* MovieAppUsingFRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieAppUsingFRUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90BF3A4F269E2172000F0C15 /* MovieAppUsingFRUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAppUsingFRUITests.swift; sourceTree = "<group>"; };
 		90BF3A51269E2172000F0C15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90BF3A5D269E2377000F0C15 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		90BF3A60269E23E8000F0C15 /* MovieAppModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MovieAppModel.xcdatamodel; sourceTree = "<group>"; };
+		90BF3A63269E266B000F0C15 /* Movie+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +101,14 @@
 		90BF3A31269E216F000F0C15 /* MovieAppUsingFR */ = {
 			isa = PBXGroup;
 			children = (
+				90BF3A62269E2654000F0C15 /* Models */,
 				90BF3A32269E216F000F0C15 /* MovieAppUsingFRApp.swift */,
 				90BF3A34269E216F000F0C15 /* ContentView.swift */,
 				90BF3A36269E2172000F0C15 /* Assets.xcassets */,
 				90BF3A3B269E2172000F0C15 /* Info.plist */,
 				90BF3A38269E2172000F0C15 /* Preview Content */,
+				90BF3A5D269E2377000F0C15 /* CoreDataManager.swift */,
+				90BF3A5F269E23E8000F0C15 /* MovieAppModel.xcdatamodeld */,
 			);
 			path = MovieAppUsingFR;
 			sourceTree = "<group>";
@@ -128,6 +137,14 @@
 				90BF3A51269E2172000F0C15 /* Info.plist */,
 			);
 			path = MovieAppUsingFRUITests;
+			sourceTree = "<group>";
+		};
+		90BF3A62269E2654000F0C15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				90BF3A63269E266B000F0C15 /* Movie+Extensions.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90BF3A61269E23E8000F0C15 /* MovieAppModel.xcdatamodeld in Sources */,
+				90BF3A5E269E2377000F0C15 /* CoreDataManager.swift in Sources */,
+				90BF3A64269E266B000F0C15 /* Movie+Extensions.swift in Sources */,
 				90BF3A35269E216F000F0C15 /* ContentView.swift in Sources */,
 				90BF3A33269E216F000F0C15 /* MovieAppUsingFRApp.swift in Sources */,
 			);
@@ -580,6 +600,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		90BF3A5F269E23E8000F0C15 /* MovieAppModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				90BF3A60269E23E8000F0C15 /* MovieAppModel.xcdatamodel */,
+			);
+			currentVersion = 90BF3A60269E23E8000F0C15 /* MovieAppModel.xcdatamodel */;
+			path = MovieAppModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 90BF3A27269E216F000F0C15 /* Project object */;
 }

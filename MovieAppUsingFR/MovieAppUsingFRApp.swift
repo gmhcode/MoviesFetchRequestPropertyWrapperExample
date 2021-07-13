@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct MovieAppUsingFRApp: App {
+    
+    var coreDM = CoreDataManager.shared
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environment(\.managedObjectContext, coreDM.viewContext)
         }
     }
 }
